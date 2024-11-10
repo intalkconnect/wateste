@@ -2,18 +2,22 @@ import React from 'react';
 
 const ReturnToWhatsApp = () => {
   const handleSendClick = () => {
-    // Redireciona para o WhatsApp usando wa.me
-    window.location.href = "https://wa.me/";
+    // Número de telefone para abrir a conversa no WhatsApp
+    const phoneNumber = '5521990286724'; // Altere para o número desejado
+    const waLink = `https://wa.me/${phoneNumber}`;
+
+    // Redireciona para o WhatsApp com o número especificado
+    window.location.href = waLink;
     
     // Tenta fechar a aba após o redirecionamento (se possível)
     setTimeout(() => {
       window.close();
-    }, 1000); // Ajuste o tempo de espera se necessário
+    }, 1000); // Ajuste o tempo se necessário
   };
 
   return (
     <div style={{ textAlign: 'center', marginTop: '50px' }}>
-      <h1>Página de Envio</h1>
+      <h1>Converse Conosco no WhatsApp</h1>
       <button 
         onClick={handleSendClick} 
         style={{
@@ -26,7 +30,7 @@ const ReturnToWhatsApp = () => {
           borderRadius: '5px'
         }}
       >
-        Enviar
+        Enviar Mensagem
       </button>
     </div>
   );
