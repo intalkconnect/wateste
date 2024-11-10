@@ -2,13 +2,13 @@ import React from 'react';
 
 const ReturnToWhatsApp = () => {
   const handleSendClick = () => {
-    // Tenta redirecionar para o WhatsApp
-    window.location.href = "whatsapp://";
-
-    // Espera 2 segundos antes de fechar a aba, caso o WhatsApp tenha sido acionado
+    // Redireciona para o WhatsApp usando wa.me
+    window.location.href = "https://wa.me/";
+    
+    // Tenta fechar a aba após o redirecionamento (se possível)
     setTimeout(() => {
       window.close();
-    }, 2000);
+    }, 1000); // Ajuste o tempo de espera se necessário
   };
 
   return (
