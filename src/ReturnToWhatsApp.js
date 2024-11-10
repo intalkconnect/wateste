@@ -3,7 +3,7 @@ import React from 'react';
 const ReturnToWhatsApp = () => {
   const handleSendClick = () => {
     // Número de telefone para abrir a conversa no WhatsApp
-    const phoneNumber = '5521990286724'; // Altere para o número desejado
+    const phoneNumber = '5521973616116'; // Altere para o número desejado
     const waLink = `https://wa.me/${phoneNumber}`;
 
     // Redireciona para o WhatsApp com o número especificado
